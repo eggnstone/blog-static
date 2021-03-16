@@ -4,8 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Don Lalicon - Codesmith',
-    titleTemplate: '%s - donlalicon.dev',
+    title: 'eggnstone.com',
+    titleTemplate: '%s - eggnstone.com',
     meta: [
       { charset: 'utf-8' },
       {
@@ -103,7 +103,7 @@ export default {
 
   // Sitemap module configuration: https://sitemap.nuxtjs.org/guide/configuration
   sitemap: {
-    hostname: 'https://donlalicon.dev',
+    hostname: 'https://blog.eggnstone.com',
     routes () {
       const { $content } = require('@nuxt/content')
       return $content({ deep: true }).only(['path']).fetch()

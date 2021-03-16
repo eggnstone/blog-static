@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen">
     <header class="p-4 border-b shadow-sm fixed w-full z-10 bg-white flex items-center sm:justify-between lg:justify-around">
       <NuxtLink to="/" class="font-mono font-bold text-2xl text-gray-800 no-underline hover:text-gray-800">
-        // donlalicon.dev
+        eggnstone.com
       </NuxtLink>
       <search-box />
     </header>
@@ -11,8 +11,9 @@
     </main>
     <footer class="flex text-sm text-gray-600 justify-center p-4 bg-gray-100">
       <div>
-        © Don Lalicon 2019 - {{ currentYear }}
+        © Mark Eggenstein 2020 - {{ currentYear }}
       </div>
+<!--
       <a href="https://twitter.com/DonOrDoNot" target="_blank" class="h-6 w-6 ml-2">
         <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
           <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm3.905 7.864c.004.082.005.164.005.244 0 2.5-1.901 5.381-5.379 5.381a5.335 5.335 0 0 1-2.898-.85c.147.018.298.025.451.025.886 0 1.701-.301 2.348-.809a1.895 1.895 0 0 1-1.766-1.312 1.9 1.9 0 0 0 .853-.033 1.892 1.892 0 0 1-1.517-1.854v-.023c.255.141.547.227.857.237a1.89 1.89 0 0 1-.585-2.526 5.376 5.376 0 0 0 3.897 1.977 1.891 1.891 0 0 1 3.222-1.725 3.797 3.797 0 0 0 1.2-.459 1.9 1.9 0 0 1-.831 1.047 3.799 3.799 0 0 0 1.086-.299 3.834 3.834 0 0 1-.943.979z" />
@@ -33,6 +34,7 @@
           <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zM6.231 7h7.52c.399 0 .193.512-.024.643-.217.13-3.22 1.947-3.333 2.014s-.257.1-.403.1a.793.793 0 0 1-.402-.1L6.255 7.643C6.038 7.512 5.833 7 6.231 7zM14 12.5c0 .21-.252.5-.444.5H6.444C6.252 13 6 12.71 6 12.5V8.853c0-.092-.002-.211.172-.11l3.417 2.015a.69.69 0 0 0 .402.1.69.69 0 0 0 .403-.1l3.434-2.014c.174-.102.172.018.172.11V12.5z" />
         </svg>
       </a>
+-->
     </footer>
   </div>
 </template>

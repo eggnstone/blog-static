@@ -52,7 +52,8 @@ export default {
     }
   },
   head () {
-    const url = `https://donlalicon.dev/blog/${this.blog.slug}`
+    const url2 = `https://blog.eggnstone.com/blog/${this.blog.slug}`
+    const url = url2
 
     const dateCreated = new Date(this.blog.createdAt)
     const dateChanged = new Date(this.blog.updatedAt)
@@ -90,7 +91,7 @@ export default {
           hid: 'og:title',
           name: 'og:title',
           property: 'og:title',
-          content: `${this.blog.title} - donlalicon.dev`
+          content: `${this.blog.title} - eggnstone.com`
         }
       ]
     }
