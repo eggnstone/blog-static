@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "blog-eggnstone-com",
+    "site": "blog-eggnstone-do-not-deploy-from-master",
     "public": "dist",
     "ignore": [
       "firebase.json",
