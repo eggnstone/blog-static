@@ -85,10 +85,10 @@ export default {
       lang: 'en'
     },
     meta: {
-      name: 'Don Lalicon - Codesmith',
-      description: 'A personal blog about building stuff with code.',
-      twitterSite: '@DonOrDoNot',
-      twitterCreator: '@DonOrDoNot'
+      name: 'eggnstone.com',
+      description: 'A blog'
+      // twitterSite: '@DonOrDoNot',
+      // twitterCreator: '@DonOrDoNot'
     }
   },
 
