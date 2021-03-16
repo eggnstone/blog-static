@@ -52,7 +52,7 @@ export default {
     }
   },
   head () {
-    const url2 = `https://blog.eggnstone.com/blog/${this.blog.slug}`
+    const url2 = `https://blog.eggnstone.dev/blog/${this.blog.slug}`
     const url = url2
 
     const dateCreated = new Date(this.blog.createdAt)
@@ -91,7 +91,7 @@ export default {
           hid: 'og:title',
           name: 'og:title',
           property: 'og:title',
-          content: `${this.blog.title} - eggnstone.com`
+          content: `${this.blog.title} - eggnstone.dev`
         }
       ]
     }

@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen">
     <header class="p-4 border-b shadow-sm fixed w-full z-10 bg-white flex items-center sm:justify-between lg:justify-around">
       <NuxtLink to="/" class="font-mono font-bold text-2xl text-gray-800 no-underline hover:text-gray-800">
-        eggnstone.com
+        eggnstone.dev
       </NuxtLink>
       <search-box />
     </header>
@@ -11,7 +11,7 @@
     </main>
     <footer class="flex text-sm text-gray-600 justify-center p-4 bg-gray-100">
       <div>
-        © eggnstone.com 2020 - {{ currentYear }}
+        © eggnstone.dev 2020 - {{ currentYear }}
       </div>
 <!--
       <a href="https://twitter.com/DonOrDoNot" target="_blank" class="h-6 w-6 ml-2">

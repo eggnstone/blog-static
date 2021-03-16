@@ -4,8 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'eggnstone.com',
-    titleTemplate: '%s - eggnstone.com',
+    title: 'eggnstone.dev',
+    titleTemplate: '%s - eggnstone.dev',
     meta: [
       { charset: 'utf-8' },
       {
@@ -85,7 +85,7 @@ export default {
       lang: 'en'
     },
     meta: {
-      name: 'eggnstone.com',
+      name: 'eggnstone.dev',
       description: 'A blog'
       // twitterSite: '@DonOrDoNot',
       // twitterCreator: '@DonOrDoNot'
@@ -103,7 +103,7 @@ export default {
 
   // Sitemap module configuration: https://sitemap.nuxtjs.org/guide/configuration
   sitemap: {
-    hostname: 'https://blog.eggnstone.com',
+    hostname: 'https://blog.eggnstone.dev',
     routes () {
       const { $content } = require('@nuxt/content')
       return $content({ deep: true }).only(['path']).fetch()
