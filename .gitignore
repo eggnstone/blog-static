@@ -90,3 +90,5 @@ sw.*
 *.swp
 /.firebaserc
 /.firebase/
+
+/static/images/unused
