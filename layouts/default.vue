@@ -11,7 +11,7 @@
     </main>
     <footer class="flex text-sm text-gray-600 justify-center p-4 bg-gray-100">
       <div>
-        © Mark Eggenstein 2020 - {{ currentYear }}
+        © eggnstone.com 2020 - {{ currentYear }}
       </div>
 <!--
       <a href="https://twitter.com/DonOrDoNot" target="_blank" class="h-6 w-6 ml-2">
