@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen">
     <header class="p-4 border-b shadow-sm fixed w-full z-10 bg-white flex items-center sm:justify-between lg:justify-around">
       <NuxtLink to="/" class="font-mono font-bold text-2xl text-gray-800 no-underline hover:text-gray-800">
-        eggnstone.dev
+        <div><img src="/icon.png" width="32" height="32" style="float: left; margin-right: 8px;" /> eggnstone.dev</div>
       </NuxtLink>
       <search-box />
     </header>
