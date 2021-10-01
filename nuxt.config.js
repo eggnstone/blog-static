@@ -86,9 +86,9 @@ export default {
     },
     meta: {
       name: 'eggnstone.dev',
-      description: 'A blog'
-      // twitterSite: '@DonOrDoNot',
-      // twitterCreator: '@DonOrDoNot'
+      description: 'A developer blog'
+      // twitterSite: '@',
+      // twitterCreator: '@'
     }
   },
 

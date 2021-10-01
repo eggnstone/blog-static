@@ -20,7 +20,7 @@ This is how I create my new [Flutter](https://flutter.dev) apps.
 The choices are my personal preferences and yours probably differ.
 
 ### Creation and initial cleanup of the main module
-To create an app named `AbcXyz` is want `AbcXyzApp` as the project name and `com.example.abc_xyz` as the package name.
+To create an app named `AbcXyz` I want `AbcXyzApp` as the project name and `com.example.abc_xyz` as the package name.
 - Do **not** use the "New Flutter project" wizard in Android Studio / IntelliJ IDEA.
 - Use the command line: `flutter create  --org com.example --project-name abc_xyz AbcXyzApp`
 
