@@ -29,7 +29,7 @@ Fix for WZone Direct Import Chrome Extension v2.5.0:
 
 In Windows File Explorer
 - Go to `%LocalAppData%\Google\Chrome\User Data\Default\Extensions\gmpiiinlandbgcfejoeaodgpfkdjnolm\2.0.5_0\js`
-- Edit the `content.js` file with a proper text edit, e.g., notepad++.
+- Edit the `content.js` file with a proper text editor, e.g., [Notepad++](https://notepad-plus-plus.org/).
 - In line 1316 replace `product.amazon_price = jQuery.trim( page.find('#priceblock_ourprice, #priceblock_dealprice, #priceblock_saleprice').eq(0).text() );` with `product.amazon_price = jQuery.trim( page.find('#corePrice_desktop .apexPriceToPay .a-offscreen').eq(0).text() );`
 - In line 1319 replace `product.list_price = jQuery.trim( page.find('#price .a-text-strike').eq(0).text() );` with `product.list_price = jQuery.trim( page.find('#corePrice_desktop .a-text-price .a-offscreen').eq(0).text() );`
 - Save the file
