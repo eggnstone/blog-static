@@ -52,8 +52,7 @@ export default {
     }
   },
   head () {
-    const url2 = `https://blog.eggnstone.dev/blog/${this.blog.slug}`
-    const url = url2
+    const url = `https://blog.eggnstone.dev/blog/${this.blog.slug}`
 
     const dateCreated = new Date(this.blog.createdAt)
     const dateChanged = new Date(this.blog.updatedAt)
