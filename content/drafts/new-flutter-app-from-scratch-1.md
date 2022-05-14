@@ -25,12 +25,12 @@ To create an app named `AbcXyz` I want `AbcXyzApp` as the project name and `com.
 - Use the command line: `flutter create  --org com.example --project-name abc_xyz AbcXyzApp`
 
 #### git
-- Create a git repository and commit all files.
+- Create a git repository ("git init .") and commit all files.
 - Remove `*.iml` from `.gitignore` and add the uncovered `.iml` files.
 - You can find my example repository at [Github](https://github.com/eggnstone/AbcXyzApp)
   
 #### `pubspec.yaml` cleanup
-- `pubspec.yaml` cleanup
+  - Open the created project in Android Studio / IntelliJ 
   - Remove all comments.
   - Add proper copyright.
   - Set version to start at `0.0.1+1`.
