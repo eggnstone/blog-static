@@ -44,7 +44,7 @@ Then use the following HTML:
   const index = '0';
   const base_url_eu = 'https://europe-west1-e-widgets-europe-west3-prod.cloudfunctions.net/SearchBoxJsonEuropeWest1'; // For Europe.
   const base_url_us = 'https://us-central1-e-widgets-europe-west3-prod.cloudfunctions.net/SearchBoxJsonUsCentral1'; // For the USA and the rest of the world.
-  const version = '1.0.0';
+  const version = '1.0.6';
   const tag = 'YOUR-AMAZON-AFFILIATE-TAG'; // Replace with your Amazon affiliate tag!
   const category = 'Sporting'; // Category, may be empty.
   const domain_code = 'com'; // Or 'ca', 'co.jp', 'co.uk', 'de', 'fr', 'it'
