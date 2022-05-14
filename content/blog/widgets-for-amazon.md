@@ -44,22 +44,25 @@ Then use the following HTML:
 
 &lt;script&gt;
 {
-  // Replace these values!
+  // Replace these values:
   const tag = 'YOUR-AMAZON-AFFILIATE-TAG';
   const footerMessage = 'AMAZON-PARTNER-PROGRAM-NOTE';
-  const keywords = 'KEYWORDS';
+
+  // Set these values:
+  const keywords = 'Golf';
+  const category = 'Sporting'; // Category, may be empty.
+  const domain_code = 'com'; // Or 'ca', 'co.jp', 'co.uk', 'de', 'fr', 'it'. www.amazon.com => "com"
+  const language = 'en'; // English is default. Use 'de' for German.
+
+  // If you are using more than one widget per page/post you need to increment the index.
+  const index = '0';
 
   const base_url_eu = 'https://europe-west1-e-widgets-europe-west3-prod.cloudfunctions.net/SearchBoxJsonEuropeWest1'; // For Europe.
   const base_url_us = 'https://us-central1-e-widgets-europe-west3-prod.cloudfunctions.net/SearchBoxJsonUsCentral1'; // For the USA and the rest of the world.
   // Choose your appropriate base url:
   const base_url = base_url_us; // Or "base_url_eu" for Europe.
 
-  const index = '0'; // If you are using more than one widget per page/post you need to increment the index.
   const version = '1.0.9';
-  const category = 'Sporting'; // Category, may be empty.
-  const domain_code = 'com'; // Or 'ca', 'co.jp', 'co.uk', 'de', 'fr', 'it'. www.amazon.com => "com"
-  const language = 'en'; // English is default. Use 'de' for German.
-
   const url = base_url + '?Version=' + version + '&Tag=' + tag + '&Category=' + category + '&DomainCode=' + domain_code + '&Language=' + language;
   eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMessage);
 }
