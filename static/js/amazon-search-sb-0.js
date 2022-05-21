@@ -17,7 +17,11 @@
   const baseUrlEu = 'https://europe-west1-e-widgets-europe-west3-prod.cloudfunctions.net/SearchBoxJsonEuropeWest1'; // For Europe.
   const baseUrl = baseUrlUs;
 
-  const version = '1.0.9';
+  const version = '1.0.17';
   const url = baseUrl + '?Version=' + version + '&Tag=' + affiliateTag + '&Category=' + category + '&DomainCode=' + domainCode + '&Language=' + language;
-  eggnstone_widgets_fill_amazon_search_box(index, url, keywords, legalMessage);
+
+  document.addEventListener("DOMContentLoaded", function(event)
+  {
+    eggnstone_widgets_fill_amazon_search_box(index, url, keywords, legalMessage);
+  });
 }

@@ -72,9 +72,13 @@ Please note that one tenth of the search results will be using our tag in order 
   const baseUrl = baseUrlUs; // Or "base_url_eu" for Europe.
 
   // Do not modify this part.
-  const version = '1.0.9';
+  const version = '1.0.17';
   const url = baseUrl + '?Version=' + version + '&Tag=' + affiliateTag + '&Category=' + category + '&DomainCode=' + domainCode + '&Language=' + language;
-  eggnstone_widgets_fill_amazon_search_box(index, url, keywords, legalMessage);
+
+  document.addEventListener("DOMContentLoaded", function(event)
+  {
+    eggnstone_widgets_fill_amazon_search_box(index, url, keywords, legalMessage);
+  });
 }
 &lt;/script&gt;
 </pre>

@@ -10,7 +10,7 @@ function eggnstone_widgets_fill_amazon_search_box_for_search_forms(index, url, k
 
 function eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMessage)
 {
-  const element = document.getElementById("amazon-search-" + index);
+  const elementName = "amazon-search-" + index;
 
   const req = new XMLHttpRequest();
   const full_url = url + "&Keywords=" + keywords;
@@ -18,6 +18,13 @@ function eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMe
   req.open("GET", full_url);
   req.addEventListener("load", function ()
   {
+    const element = document.getElementById(elementName);
+    if (!element)
+    {
+      console.error("Widgets for Amazon: Could not find element '" + elementName + "'. (2)");
+      return;
+    }
+
     if (req.status === 200)
     {
       const maxTitleWidth = element.clientWidth - (100 + 4 * 8 + 2 * 1); // 100px image column, 8px padding, 1px border
@@ -32,7 +39,11 @@ function eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMe
       element.innerHTML = eggnstone_widgets_create_search_box_table_with_message(index, url, keywords, "Nothing found.", footerMessage);
   });
 
-  element.innerHTML = eggnstone_widgets_create_search_box_table_with_message(index, url, keywords, "Loading ...", footerMessage);
+  const element = document.getElementById(elementName);
+  if (element)
+    element.innerHTML = eggnstone_widgets_create_search_box_table_with_message(index, url, keywords, "Loading ...", footerMessage);
+  else
+    console.log("Widgets for Amazon: Could not find element '" + elementName + "'. (1)");
 
   req.send(null);
 }
