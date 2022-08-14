@@ -7,6 +7,9 @@ lead: "Amazon ended the support for their search widgets. Here's a replacement."
 
 description: "Amazon ended the support for their search widgets. Here's a replacement."
 
+createdAt: 2022-05-14
+updatedAt: 2022-08-14
+
 cover:
   image: "/images/banner-772x250.png"
   alt: "Replacement for Amazon search widget"
@@ -72,7 +75,7 @@ Please note that one tenth of the search results will be using our tag in order 
   const baseUrl = baseUrlUs; // Or "base_url_eu" for Europe.
 
   // Do not modify this part.
-  const version = '1.0.17';
+  const version = '1.0.27';
   const url = baseUrl + '?Version=' + version + '&Tag=' + affiliateTag + '&Category=' + category + '&DomainCode=' + domainCode + '&Language=' + language;
 
   document.addEventListener("DOMContentLoaded", function(event)

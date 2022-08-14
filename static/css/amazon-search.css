@@ -47,21 +47,35 @@
 .amazon-search table.inner-table td.right-cell
 {
   border: 0;
-  padding: 0 16px 0 0;
+  padding: 0 8px 0 0;
+}
+
+.amazon-search .input-border
+{
+  background: white;
+  border: 1px solid lightgray;
+  border-right: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.amazon-search table.inner-table label
+{
+  margin: 0;
+  padding: 0;
 }
 
 .amazon-search table.inner-table input
 {
   font-size: 10pt;
   font-family: Arial, sans-serif;
-  border: 1px solid lightgray;
-  border-right: none;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border: 0;
   width: 100%;
-  padding: 8px;
-  height: 40px;
+  height: 38px;
   margin: 0;
+  padding: 0;
 }
 
 .amazon-search table.inner-table input:focus

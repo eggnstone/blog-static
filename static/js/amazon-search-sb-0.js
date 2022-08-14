@@ -17,7 +17,7 @@
   const baseUrlEu = 'https://europe-west1-e-widgets-europe-west3-prod.cloudfunctions.net/SearchBoxJsonEuropeWest1'; // For Europe.
   const baseUrl = baseUrlUs;
 
-  const version = '1.0.17';
+  const version = '1.0.27';
   const url = baseUrl + '?Version=' + version + '&Tag=' + affiliateTag + '&Category=' + category + '&DomainCode=' + domainCode + '&Language=' + language;
 
   document.addEventListener("DOMContentLoaded", function(event)

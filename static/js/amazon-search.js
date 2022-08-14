@@ -1,12 +1,4 @@
-function eggnstone_widgets_fill_amazon_search_box_for_search_forms(index, url, keywords, footerMessage)
-{
-  const element = document.getElementById("amazon-search-" + index);
-
-  if (!eggnstone_widgets_has_some_parent_the_class(element, "no-results"))
-    return;
-
-  eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMessage);
-}
+// https://blog.eggnstone.com/blog/widgets-for-amazon
 
 function eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMessage)
 {
@@ -14,9 +6,9 @@ function eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMe
 
   const req = new XMLHttpRequest();
   const full_url = url + "&Keywords=" + keywords;
-  //console.log("full_url: " + full_url);
+
   req.open("GET", full_url);
-  req.addEventListener("load", function ()
+  req.addEventListener("load", function()
   {
     const element = document.getElementById(elementName);
     if (!element)
@@ -27,13 +19,28 @@ function eggnstone_widgets_fill_amazon_search_box(index, url, keywords, footerMe
 
     if (req.status === 200)
     {
-      const maxTitleWidth = element.clientWidth - (100 + 4 * 8 + 2 * 1); // 100px image column, 8px padding, 1px border
+      const maxTitleWidth = element.clientWidth - (100 + 4 * 8 + 2); // 100px image column, 4 * 8px padding, 2 * 1px border
       const parsedJson = JSON.parse(req.responseText);
       const items = parsedJson["Items"];
+      const messages = parsedJson["Messages"];
+
       if (!items || items.length === 0)
         element.innerHTML = eggnstone_widgets_create_search_box_table_with_message(index, url, keywords, "Nothing found.", footerMessage);
       else
         element.innerHTML = eggnstone_widgets_create_search_box_table_with_result(index, url, keywords, items, maxTitleWidth, footerMessage);
+
+      if (messages)
+      {
+        for (const message of messages)
+        {
+          if (message.type === "Error")
+            console.error("Widgets for Amazon: " + message.text);
+          if (message.type === "Warning")
+            console.error("Widgets for Amazon: Warning: " + message.text);
+          else
+            console.log("Widgets for Amazon: " + message.text);
+        }
+      }
     }
     else
       element.innerHTML = eggnstone_widgets_create_search_box_table_with_message(index, url, keywords, "Nothing found.", footerMessage);
@@ -144,15 +151,17 @@ function eggnstone_widgets_create_search_box_table_start(index, url, keywords, f
     "      <table class='inner-table'>" +
     "        <tr>" +
     "          <td class='left-cell'>" +
-    "            <label>" +
-    "              <input id='amazon-search-input-" + index + "' value='" + keywords + "'" +
-    "                onkeyup='eggnstone_widgets_on_search_text_key_up(event.key, \"" + index + "\", \"" + url + "\", \"" + footerMessage + "\");'/>" +
-    "            </label>" +
+    "            <div class='input-border'>" +
+    "              <label>" +
+    "                <input id='amazon-search-input-" + index + "' value='" + keywords + "'" +
+    "                  onkeyup='eggnstone_widgets_on_search_text_key_up(event.key, \"" + index + "\", \"" + url + "\", \"" + footerMessage + "\");'/>" +
+    "              </label>" +
+    "            </div>" +
     "          </td>" +
     "          <td class='right-cell'>" +
-    "            <button " +
+    "            <button" +
     "              onclick='eggnstone_widgets_on_search_button_click(\"" + index + "\", \"" + url + "\", \"" + footerMessage + "\");'/>" +
-    "              <svg width='12' height='12' http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z' style='fill:#ffffff'/></svg>" +
+    "              <svg width='12' height='12' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z' style='fill:#ffffff'/></svg>" +
     "            </button>" +
     "          </td>" +
     "        </tr>" +
@@ -164,13 +173,4 @@ function eggnstone_widgets_create_search_box_table_start(index, url, keywords, f
 function eggnstone_widgets_create_search_box_table_end(footerMessage)
 {
   return "</table>" + '<div class="footer">' + footerMessage + "</div>";
-
-}
-
-function eggnstone_widgets_has_some_parent_the_class(element, classname)
-{
-  if (element.className && element.className.split(" ").indexOf(classname) >= 0)
-    return true;
-
-  return element.parentNode && eggnstone_widgets_has_some_parent_the_class(element.parentNode, classname);
 }
