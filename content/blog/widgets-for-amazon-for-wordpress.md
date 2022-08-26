@@ -40,7 +40,7 @@ Otherwise, please see my other article [Widgets for Amazon](/blog/widgets-for-am
     */
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
-    s.src = 'https://blog-eggenstone-com.disqus.com/embed.js';
+    s.src = 'https://blog-eggnstone-com.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
