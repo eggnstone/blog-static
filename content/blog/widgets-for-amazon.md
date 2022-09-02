@@ -1,10 +1,7 @@
 ---
 title: "Widgets for Amazon"
-
 subtitle: "Amazon ended the support for their search widgets. Here's a replacement."
-
 lead: "Amazon ended the support for their search widgets. Here's a replacement."
-
 description: "Amazon ended the support for their search widgets. Here's a replacement."
 
 createdAt: 2022-05-14
@@ -332,6 +329,8 @@ toys-and-games-intl-ship: Toys & Games<br/>
 videogames-intl-ship: Video Games<br/>
 fashion-womens-intl-ship: Women's Fashion<br/>
         </div>
+
+<br/>
 
 <div id="disqus_thread"></div>
 <script>
