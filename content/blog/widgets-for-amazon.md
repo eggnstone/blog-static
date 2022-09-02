@@ -328,7 +328,6 @@ tools-intl-ship: Tools & Home Improvement<br/>
 toys-and-games-intl-ship: Toys & Games<br/>
 videogames-intl-ship: Video Games<br/>
 fashion-womens-intl-ship: Women's Fashion<br/>
-        </div>
 
 <br/>
 
