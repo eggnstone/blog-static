@@ -32,7 +32,8 @@ How to set up a [Mezzanine](https://github.com/stephenmcd/mezzanine/blob/master/
 - <a target="_blank" href="https://www.kaisgolfguide.com">Kai's Golf Guide</a> - Obviously a golf guide.
 - <a target="_blank" href="https://www.thesavagemind.com">The Savage Mind</a> - A self-help and career development site.
 
-[Next part of the series &gt;](https://blog.eggnstone.dev/blog/how-to-set-up-a-mezzanine-cms-part-2)
+<strong>[Next part of the series &gt;](https://blog.eggnstone.dev/blog/how-to-set-up-a-mezzanine-cms-part-2)
+</strong>
 
 <br/>
 

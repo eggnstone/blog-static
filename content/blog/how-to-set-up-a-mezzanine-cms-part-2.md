@@ -1,7 +1,7 @@
 ---
 title: "How to set up a Mezzanine CMS - Part 2"
-subtitle: "Basic setup for Mezzanine on a local machine."
-lead: "Basic setup for Mezzanine on a local machine."
+subtitle: "Basic setup for Mezzanine on a local machine"
+lead: "Basic setup for Mezzanine on a local machine"
 description: "Basic setup for Mezzanine on a local machine."
 createdAt: 2022-09-03T00:00:00.000Z
 updatedAt: 2022-09-03T00:00:00.000Z
@@ -20,7 +20,7 @@ tags:
   - CMS
 ---
 
-### Install a Python IDE
+### Installing a Python IDE
 
 I recommend [PyCharm](https://www.jetbrains.com/pycharm/) from [JetBrains](https://www.jetbrains.com).  
 It's available as a paid versions, but it also has a free community version.  
@@ -29,9 +29,10 @@ The advantage of using a Python IDE is that it usually installs Python for you a
 If you are just using a text editor then you have to install and maintain [Python](https://www.python.org) yourself. 
 
 
-[&lt; Previous part of the series](https://blog.eggnstone.dev/blog/how-to-set-up-a-mezzanine-cms-part-1)
+<strong>[&lt; Previous part of the series](https://blog.eggnstone.dev/blog/how-to-set-up-a-mezzanine-cms-part-1)
 &nbsp; - &nbsp;
 [Next part of the series &gt;](https://blog.eggnstone.dev/blog/how-to-set-up-a-mezzanine-cms-part-3)
+</strong>
 
 <br/>
 
