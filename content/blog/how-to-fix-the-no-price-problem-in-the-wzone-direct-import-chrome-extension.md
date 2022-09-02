@@ -17,7 +17,9 @@ tags:
   - WZone Direct Import
   - Chrome Extensions
 ---
+
 ### Problem
+
 If you are using WordPress with WooCommerce and the WooZone/WZone plugin then you are probably also using the [WZone Direct Import](https://chrome.google.com/webstore/detail/wzone-direct-import/gmpiiinlandbgcfejoeaodgpfkdjnolm) extension for Google Chrome.
 
 Recently Amazon changed their web pages and the extension cannot pick up the prices anymore.
@@ -37,6 +39,8 @@ In Google Chrome
 - Reload the Amazon page.
 - You should see the prices again.
 ![With price](/images/wzone-direct-import-price.png)
+
+<br/>
 
 <div id="disqus_thread"></div>
 <script>
