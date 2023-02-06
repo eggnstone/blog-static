@@ -15,10 +15,10 @@
       {{ blog.createdAt | toDate }}
     </div>
     <figure v-if="blog.cover" class="my-4">
-      <img :src="blog.cover.image" :alt="blog.cover.alt ? blog.cover.alt : blog.title">
+      <img :src="blog.cover.image" :alt="blog.cover.alt ? blog.cover.alt : blog.title" style="max-height: 200px; object-fit: contain;">
       <figcaption v-html="blog.cover.caption" />
     </figure>
-    <nav v-if="blog.toc.length > 1">
+    <nav v-if="blog.toc.length > 2">
       <ul class="px-4 my-4">
         <li v-for="link of blog.toc" :key="link.id" class="pl-1" :class="{ 'ml-5': link.depth === 3 }">
           <NuxtLink :to="`#${link.id}`" class="no-underline">

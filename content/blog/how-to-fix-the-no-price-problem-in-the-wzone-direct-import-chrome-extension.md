@@ -1,5 +1,5 @@
 ---
-title: "How to fix the \"No Price\" problem in the \"WZone Direct Import\" Chrome Extension"
+title: "\"No Price\" problem in \"WZone Direct Import\" Chrome Extension"
 subtitle: "Always seeing \"No Price\"? Here's a quick fix."
 lead: "Always seeing \"No Price\"? Here's a quick fix.."
 description: "Always seeing \"No Price\"? Here's a quick fix..."
