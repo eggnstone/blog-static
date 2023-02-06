@@ -91,4 +91,6 @@ sw.*
 /.firebaserc
 /.firebase/
 
+# Manually added:
 /static/images/unused
+node_modules.*/
