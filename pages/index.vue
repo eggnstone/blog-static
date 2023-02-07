@@ -8,9 +8,10 @@
     >
       <div v-if="blog.cover" class="sm:flex-shrink-0 sm:w-1/4 sm:ml-4">
         <img
+          style="max-height: 100px; object-fit: contain;"
           :src="blog.cover.thumb"
           :alt="blog.cover.alt ? blog.cover.alt : blog.title"
-          class="h-auto rounded-t object-cover sm:rounded-none"
+          class="h-auto rounded-t object-cover sm:rounded-none m-auto"
         >
       </div>
       <div class="flex-grow flex flex-col p-4 sm:p-0">

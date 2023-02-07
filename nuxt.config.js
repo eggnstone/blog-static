@@ -103,7 +103,7 @@ export default {
 
   // Sitemap module configuration: https://sitemap.nuxtjs.org/guide/configuration
   sitemap: {
-    //trailingSlash: true,
+    // trailingSlash: true,
     hostname: 'https://blog.eggnstone.dev',
     routes () {
       const { $content } = require('@nuxt/content')
